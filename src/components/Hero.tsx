@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, ChevronRight } from "lucide-react";
+import { Phone, ChevronRight } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import heroImage from "@/assets/hero-dental.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
@@ -48,7 +49,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-200">
             <Button variant="cta" size="xl" asChild>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 Agendar Avaliação
                 <ChevronRight className="w-5 h-5" />
               </a>

@@ -1,4 +1,5 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 
 const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";

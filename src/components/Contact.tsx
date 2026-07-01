@@ -3,7 +3,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
