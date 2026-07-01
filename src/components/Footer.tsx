@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
+const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -122,14 +122,15 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-primary-foreground/70">
-                  Av. Eng. Armando de Arruda Pereira, 1234<br />
-                  Jabaquara, São Paulo - SP
+                  Av. Eng. Armando de Arruda Pereira, 2357<br />
+                  Jabaquara, São Paulo - SP<br />
+                  CEP 04309-011
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
-                <a href="tel:+5511999999999" className="text-primary-foreground/70 hover:text-primary transition-colors">
-                  (11) 99999-9999
+                <a href="tel:+5511970604418" className="text-primary-foreground/70 hover:text-primary transition-colors">
+                  (11) 97060-4418
                 </a>
               </li>
               <li className="flex items-center gap-3">
