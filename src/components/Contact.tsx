@@ -7,7 +7,7 @@ import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
+const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -77,8 +77,9 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Endereço</h3>
                   <p className="text-muted-foreground">
-                    Av. Eng. Armando de Arruda Pereira, 1234<br />
-                    Jabaquara, São Paulo - SP
+                    Av. Eng. Armando de Arruda Pereira, 2357<br />
+                    Jabaquara, São Paulo - SP<br />
+                    CEP 04309-011
                   </p>
                 </div>
               </div>
@@ -89,8 +90,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Telefone</h3>
-                  <a href="tel:+5511999999999" className="text-muted-foreground hover:text-primary transition-colors">
-                    (11) 99999-9999
+                  <a href="tel:+5511970604418" className="text-muted-foreground hover:text-primary transition-colors">
+                    (11) 97060-4418
                   </a>
                 </div>
               </div>
@@ -114,8 +115,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Horário de Funcionamento</h3>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 08h - 18h<br />
-                    Sábado: 08h - 13h
+                    Segunda a Sexta: 9h - 19h<br />
+                    Sábado: 9h - 14h
                   </p>
                 </div>
               </div>
@@ -157,7 +158,7 @@ const Contact = () => {
                   maxLength={15}
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
-                  placeholder="(11) 99999-9999"
+                  placeholder="(11) 97060-4418"
                 />
               </div>
 
@@ -225,7 +226,7 @@ const Contact = () => {
         <div className="mt-16 rounded-2xl overflow-hidden shadow-card h-80">
           <iframe
             title="Localização Green Smile Odontologia"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.0!2d-46.641!3d-23.646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzQ1LjYiUyA0NsKwMzgnMjcuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.0!2d-46.639955!3d-23.648364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzU0LjEiUyA0NsKwMzgnMjMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
             width="100%"
             height="100%"
             style={{ border: 0 }}

@@ -2,8 +2,8 @@ import { Phone, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-const WHATSAPP_LINK = "https://wa.me/5511999999999?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
-const PHONE_NUMBER = "tel:+5511999999999";
+const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
+const PHONE_NUMBER = "tel:+5511970604418";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ const Header = () => {
             <Button variant="outline" size="sm" asChild>
               <a href={PHONE_NUMBER} aria-label="Ligar para Green Smile">
                 <Phone className="w-4 h-4" />
-                <span className="hidden lg:inline">(11) 99999-9999</span>
+                <span className="hidden lg:inline">(11) 97060-4418</span>
               </a>
             </Button>
             <Button variant="whatsapp" size="sm" asChild>
