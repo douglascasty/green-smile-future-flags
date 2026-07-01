@@ -46,7 +46,7 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="WhatsApp da Green Smile"
               >
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
               </a>
             </div>
           </div>

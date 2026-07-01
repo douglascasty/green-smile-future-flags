@@ -55,7 +55,7 @@ const Header = () => {
             </Button>
             <Button variant="whatsapp" size="sm" asChild>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span className="hidden lg:inline">WhatsApp</span>
               </a>
             </Button>
@@ -101,7 +101,7 @@ const Header = () => {
               </Button>
               <Button variant="whatsapp" asChild className="w-full">
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   Falar no WhatsApp
                 </a>
               </Button>

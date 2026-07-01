@@ -125,7 +125,7 @@ const Contact = () => {
             <div className="mt-8">
               <Button variant="whatsapp" size="lg" asChild>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   Falar no WhatsApp
                 </a>
               </Button>

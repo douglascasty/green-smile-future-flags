@@ -16,7 +16,7 @@ const MobileCTA = () => {
         </Button>
         <Button variant="whatsapp" size="lg" asChild className="flex-1">
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Agendar via WhatsApp">
-            <MessageCircle className="w-5 h-5" />
+            <WhatsAppIcon className="w-5 h-5" />
             Agendar
           </a>
         </Button>
