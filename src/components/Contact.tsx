@@ -3,7 +3,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -125,7 +126,7 @@ const Contact = () => {
             <div className="mt-8">
               <Button variant="whatsapp" size="lg" asChild>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   Falar no WhatsApp
                 </a>
               </Button>

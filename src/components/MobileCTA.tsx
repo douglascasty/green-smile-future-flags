@@ -1,4 +1,5 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 
 const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
@@ -16,7 +17,7 @@ const MobileCTA = () => {
         </Button>
         <Button variant="whatsapp" size="lg" asChild className="flex-1">
           <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Agendar via WhatsApp">
-            <MessageCircle className="w-5 h-5" />
+            <WhatsAppIcon className="w-5 h-5" />
             Agendar
           </a>
         </Button>

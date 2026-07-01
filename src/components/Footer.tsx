@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
 
@@ -46,7 +47,7 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="WhatsApp da Green Smile"
               >
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -66,8 +67,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#equipe" className="text-primary-foreground/70 hover:text-primary transition-colors">
-                  Nossa Equipe
+                <a href="#estrutura" className="text-primary-foreground/70 hover:text-primary transition-colors">
+                  Nossa Estrutura
                 </a>
               </li>
               <li>

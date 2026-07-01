@@ -1,4 +1,5 @@
-import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ const Header = () => {
   const navLinks = [
     { href: "#inicio", label: "Início" },
     { href: "#servicos", label: "Serviços" },
-    { href: "#equipe", label: "Equipe" },
+    { href: "#estrutura", label: "Estrutura" },
     { href: "#depoimentos", label: "Depoimentos" },
     { href: "#contato", label: "Contato" },
   ];
@@ -54,7 +55,7 @@ const Header = () => {
             </Button>
             <Button variant="whatsapp" size="sm" asChild>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span className="hidden lg:inline">WhatsApp</span>
               </a>
             </Button>
@@ -100,7 +101,7 @@ const Header = () => {
               </Button>
               <Button variant="whatsapp" asChild className="w-full">
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   Falar no WhatsApp
                 </a>
               </Button>
