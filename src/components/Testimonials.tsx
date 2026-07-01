@@ -2,22 +2,29 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Mariana Oliveira",
-    treatment: "Clareamento Dental",
+    treatment: "Avaliação Geral",
     rating: 5,
-    text: "Fiz o clareamento e estou encantada! O atendimento foi excelente, a equipe muito profissional e o resultado superou minhas expectativas. Super recomendo!",
+    text: "Minha experiência foi excelente! Sempre fui muito bem atendida, e o resultado superou minhas expectativas. Meus dentes ficaram maravilhosos! Obrigado Dr. Victor.",
   },
   {
-    name: "Roberto Almeida",
-    treatment: "Implante Dentário",
+    treatment: "Lentes de Contato Dental",
     rating: 5,
-    text: "Tinha muito medo de fazer o implante, mas a equipe me deixou super tranquilo. O procedimento foi rápido e a recuperação foi ótima. Hoje tenho meu sorriso de volta!",
+    text: "Ótimo lugar com ambiente limpo e agradável. Fui atendido pelo dentista Victor, onde realizei o procedimento de lentes de contato. Trabalho excelente e super acessível da região, além de ter tido todo o suporte de dúvidas no pós. Super recomendo!",
   },
   {
-    name: "Fernanda Santos",
-    treatment: "Ortodontia",
+    treatment: "Tratamento de Canal",
     rating: 5,
-    text: "Minha filha faz tratamento ortodôntico aqui e adora! O ambiente é acolhedor e a Dra. Marina tem um jeito especial com as crianças. Nota 10!",
+    text: "Quero parabenizar o atendimento do dentista dr Victor, fiz meu canal com ele e fiquei muito satisfeita, ficou ótimo, agora estou aguardando minha prótese nova. Médico maravilhoso, trabalha com humanização e profissionalismo com os pacientes além do carinho nos atendimentos! Super indico!!",
+  },
+  {
+    treatment: "Restauração de Urgência",
+    rating: 5,
+    text: "Quebrei meu dente da frente e precisei de uma restauração com urgência. Fui atendido pelo doutor Victor, que fez um trabalho excelente, com muito cuidado e atenção. Além do ótimo atendimento, a clínica é muito agradável. Fiquei muito satisfeita com o resultado e com certeza voltarei mais vezes.",
+  },
+  {
+    treatment: "Lentes de Resina",
+    rating: 5,
+    text: "Há 5 dias fiz lentes de resina na Green Smile, ótima clínica! O trabalho do Dr. superou minhas expectativas, tinha dentes pequenos e amarelos e ficaram perfeitos. Super indico! Parabéns à Clínica Green Smile pelo profissionalismo e atendimento.",
   },
 ];
 
@@ -34,8 +41,7 @@ const Testimonials = () => {
             O que nossos pacientes dizem
           </h2>
           <p className="text-lg text-muted-foreground">
-            A satisfação dos nossos pacientes é nossa maior recompensa. 
-            Veja alguns depoimentos de quem já transformou o sorriso conosco.
+            Avaliações reais e verificadas de pacientes no Google Business Profile da clínica.
           </p>
         </div>
 
@@ -43,12 +49,12 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <article
-              key={testimonial.name}
+              key={index}
               className="bg-card rounded-2xl p-8 card-elevated animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <Quote className="w-10 h-10 text-primary/30 mb-4" aria-hidden="true" />
-              
+
               <div className="flex gap-1 mb-4" aria-label={`Avaliação: ${testimonial.rating} de 5 estrelas`}>
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-accent text-accent" aria-hidden="true" />
@@ -60,7 +66,7 @@ const Testimonials = () => {
               </p>
 
               <div className="pt-6 border-t border-border">
-                <p className="font-semibold text-foreground">{testimonial.name}</p>
+                <p className="font-semibold text-foreground">Avaliação verificada no Google</p>
                 <p className="text-sm text-muted-foreground">{testimonial.treatment}</p>
               </div>
             </article>
