@@ -2,6 +2,7 @@ import { Phone, Menu, X } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import logo from "@/assets/greensmile-logo.jpg.asset.json";
 
 const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
 const PHONE_NUMBER = "tel:+5511970604418";
@@ -22,13 +23,14 @@ const Header = () => {
       <nav className="container-custom" aria-label="Navegação principal">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2 group" aria-label="Green Smile Odontologia - Página inicial">
-            <div className="w-10 h-10 rounded-full hero-gradient flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">G</span>
-            </div>
-            <span className="font-bold text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
-              Green Smile
-            </span>
+          <a href="#inicio" className="flex items-center gap-2 group" aria-label="Green Smile Clínica Odontológica - Página inicial">
+            <img
+              src={logo.url}
+              alt="Green Smile Clínica Odontológica"
+              className="h-10 md:h-12 w-auto"
+              width={200}
+              height={130}
+            />
           </a>
 
           {/* Desktop Navigation */}
