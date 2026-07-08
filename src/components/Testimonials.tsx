@@ -71,8 +71,8 @@ const Testimonials = () => {
               </p>
 
               <div className="pt-6 border-t border-border">
-                <p className="font-semibold text-foreground">Avaliação verificada no Google</p>
-                <p className="text-sm text-muted-foreground">{testimonial.treatment}</p>
+                <p className="font-semibold text-foreground">{testimonial.author}</p>
+                <p className="text-sm text-muted-foreground">{testimonial.treatment} · Avaliação verificada no Google</p>
               </div>
             </article>
           ))}
