@@ -1,25 +1,25 @@
-import clinicReception from "@/assets/clinic-reception.jpg";
-import clinicRoom from "@/assets/clinic-room.jpg";
-import clinicWaiting from "@/assets/clinic-waiting.jpg";
+import clinicGreen from "@/assets/clinic-room-green.jpg.asset.json";
+import clinicTeal from "@/assets/clinic-room-teal.jpg.asset.json";
+import clinicOrange from "@/assets/clinic-room-orange.jpg.asset.json";
 
 const spaces = [
   {
-    label: "Recepção",
+    label: "Consultório Verde",
     description:
-      "Um espaço acolhedor para receber você com conforto desde o primeiro contato.",
-    image: clinicReception,
+      "Ambiente com iluminação LED verde, cadeira Gnatus e bancada equipada para procedimentos gerais e estéticos.",
+    image: clinicGreen.url,
   },
   {
-    label: "Sala de atendimento",
+    label: "Consultório Turquesa",
     description:
-      "Consultório equipado com tecnologia moderna e ambiente clínico higienizado.",
-    image: clinicRoom,
+      "Sala moderna com iluminação azul, equipamentos higienizados e espaço reservado para acompanhante.",
+    image: clinicTeal.url,
   },
   {
-    label: "Área de espera",
+    label: "Consultório Âmbar",
     description:
-      "Ambiente tranquilo e confortável para o seu bem-estar antes da consulta.",
-    image: clinicWaiting,
+      "Consultório com iluminação âmbar aconchegante, pensado para tornar cada atendimento mais confortável.",
+    image: clinicOrange.url,
   },
 ];
 
