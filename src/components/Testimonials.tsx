@@ -2,26 +2,31 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
+    author: "Lulu M",
     treatment: "Avaliação Geral",
     rating: 5,
     text: "Minha experiência foi excelente! Sempre fui muito bem atendida, e o resultado superou minhas expectativas. Meus dentes ficaram maravilhosos! Obrigado Dr. Victor.",
   },
   {
+    author: "Douglas Casty",
     treatment: "Lentes de Contato Dental",
     rating: 5,
     text: "Ótimo lugar com ambiente limpo e agradável. Fui atendido pelo dentista Victor, onde realizei o procedimento de lentes de contato. Trabalho excelente e super acessível da região, além de ter tido todo o suporte de dúvidas no pós. Super recomendo!",
   },
   {
+    author: "Rubia Reis",
     treatment: "Tratamento de Canal",
     rating: 5,
     text: "Quero parabenizar o atendimento do dentista dr Victor, fiz meu canal com ele e fiquei muito satisfeita, ficou ótimo, agora estou aguardando minha prótese nova. Médico maravilhoso, trabalha com humanização e profissionalismo com os pacientes além do carinho nos atendimentos! Super indico!!",
   },
   {
+    author: "Cida Castilho",
     treatment: "Restauração de Urgência",
     rating: 5,
     text: "Quebrei meu dente da frente e precisei de uma restauração com urgência. Fui atendido pelo doutor Victor, que fez um trabalho excelente, com muito cuidado e atenção. Além do ótimo atendimento, a clínica é muito agradável. Fiquei muito satisfeita com o resultado e com certeza voltarei mais vezes.",
   },
   {
+    author: "Gilvanete Moreira Costa",
     treatment: "Lentes de Resina",
     rating: 5,
     text: "Há 5 dias fiz lentes de resina na Green Smile, ótima clínica! O trabalho do Dr. superou minhas expectativas, tinha dentes pequenos e amarelos e ficaram perfeitos. Super indico! Parabéns à Clínica Green Smile pelo profissionalismo e atendimento.",
@@ -66,8 +71,8 @@ const Testimonials = () => {
               </p>
 
               <div className="pt-6 border-t border-border">
-                <p className="font-semibold text-foreground">Avaliação verificada no Google</p>
-                <p className="text-sm text-muted-foreground">{testimonial.treatment}</p>
+                <p className="font-semibold text-foreground">{testimonial.author}</p>
+                <p className="text-sm text-muted-foreground">{testimonial.treatment} · Avaliação verificada no Google</p>
               </div>
             </article>
           ))}
