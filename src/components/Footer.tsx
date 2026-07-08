@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import logo from "@/assets/greensmile-logo.jpg.asset.json";
 
 const WHATSAPP_LINK = "https://wa.me/5511970604418?text=Olá%2C%20vi%20o%20site%20da%20Green%20Smile%20e%20gostaria%20de%20agendar%20uma%20avaliação.";
 
@@ -12,11 +13,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">G</span>
-              </div>
-              <span className="font-bold text-xl">Green Smile</span>
+            <div className="mb-6 inline-block rounded-2xl bg-primary-foreground p-3">
+              <img
+                src={logo.url}
+                alt="Green Smile Clínica Odontológica"
+                className="h-14 w-auto"
+                width={220}
+                height={140}
+              />
             </div>
             <p className="text-primary-foreground/70 mb-6 leading-relaxed">
               Cuidando do seu sorriso com tecnologia, carinho e excelência há mais de 15 anos.
